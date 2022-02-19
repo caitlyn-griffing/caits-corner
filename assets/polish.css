@@ -1,22 +1,36 @@
 :root {
     --grey: #898989;
     --seagreen: rgb(0, 255, 204);
-    --seablue: rgb(0, 153, 255);
     --navy: rgb(0, 45, 77);
     --light: #cecece;
     --dkGrey: #555;
+    --greyOP: rgba(1, 1, 1, 0.77);
+    --dkGreyOP: rgba(1, 1, 1, 0.93);
 }
+
+/* * {box-sizing: border-box;} */
 
 body {
-    background-color: var(--grey);
+    background-color: var(--light);
+    color: var(--seagreen);
+    background-image: url(./images/MerakiFS.png);
 }
 
-.nav {
-    padding: 1em;
-    border-bottom: 3px solid var(--seagreen);
+header {
+    background-color: var(--dkGreyOP);
+}
+
+#nav-wrapper {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+.main {
+    background-color: var(--greyOP);
+    color: var(--seagreen);
+    padding-bottom: 1.5em;
 }
 
 .about-me {
@@ -27,38 +41,129 @@ body {
     align-items: center;
 }
 
-.sampleCtn {
+/* .myWorkCtn {
     padding: 3em;
     border-bottom: 3px solid var(--seagreen);
     display: flex;
     flex-direction: row;
     align-items: center;
     text-align: center;
-}
+}  */
 
-.h2 {
+/* .h2 {
     border-bottom: 7px ridge var(--seagreen);
     padding: 0.3em 1em;
+} */
+
+.myWork {
+    margin: 3em;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+    position: relative;
+  }
+  
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    color: var(--seagreen);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: var(--navy);
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 0.5em 0;
+    color: white;
+    font-size: 2em;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Six columns side by side */
+.column {
+    float: left;
+    width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
 }
 
 footer {
     display: flex;
     flex-direction: column;
     text-align: center;
+    background-color: var(--dkGreyOP);
 }
 
 footer div {
     padding: 1em;
 }
 
-.icons {
-    /* text-align: center; */
-    /* align-items: center; */
-    /* justify-content: center; */
-}
-
 a {
     padding: 1em;
+    color: var(--seagreen);
+}
+
+.linkedin:hover, .github:hover {
+    font-size: 1.5em;
+    color: var(--navy);
+    border-bottom: 2px solid var(--light);
 }
 
 button {
@@ -66,18 +171,31 @@ button {
     border-radius: 7px;
     border: 2px solid var(--navy);
     box-shadow: 3px 3px 3px;
-    background-color: var(--seablue);
+    background-color: var(--seagreen);
     font-size: 1.2em;
 }
 
+button:hover {
+    border: 3px solid var(--seagreen);
+    box-shadow: 3px 3px 3px var(--light);
+    background-color: var(--navy);
+    color: var(--light);
+    text-decoration: none;
+}
+
 button a {
+    color: var(--navy);
+    text-decoration: none;
+}
+
+button a:hover {
     color: var(--light);
     text-decoration: none;
 }
 
 .heart-text{
     font-size: 17px;
-    color: var(--navy);
+    color: var(--light);
 }
 
 .heart {
