@@ -70,24 +70,16 @@ section {
     text-align: center;
 }
 
-/* .myWorkCtn {
-    padding: 3em;
-    border-bottom: 3px solid var(--seagreen);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-align: center;
-}  */
-
 .h2 {
-    font-size: 3.8em;
+    font-size: 3em;
     padding: 0.2em;
-
+    text-align: center;
     border-bottom: 1px solid var(--seagreen);
+    margin-bottom: 0.5em;
 }
 
 .bio {
-    font-size: 1.4em;
+    font-size: 1.2em;
 }
 
 #personal {
@@ -111,29 +103,6 @@ section {
     display: none;
 }
 
-/* .link a {
-    border-radius: 5px;
-    font-size: 1.7em;
-}
-
-#deploy {
-    position: absolute;
-    top: 48%;
-    right: 55%;
-    height: 15%;
-    width: 35%;
-}
-
-#ghub {
-    position: absolute;
-    top: 48%;
-    left: 55%;
-    height: 15%;
-    text-align: center;
-    width: 35%;
-} */
-
-
 .link {
     background-color: var(--greyOP);
     text-decoration: none;
@@ -141,8 +110,8 @@ section {
 
 .link a {
     color: var(--seagreen);
-    font-size: 1.2em;
     font-weight: bold;
+    font-size: 0.93em;
 }
 
 
@@ -157,7 +126,7 @@ section {
 #next {
     cursor: pointer;
     position: absolute;
-    top: 135%;
+    top: 185%;
     width: max-content;
     /* padding: 16px; */
     /* margin: 0; */
@@ -206,7 +175,7 @@ section {
 
 /* caption text */
 #caption {
-    font-size: 1.5em;
+    font-size: 1.2em;
     border-top: 2px solid var(--seagreen);
     border-bottom: 2px solid var(--seagreen);
 }
@@ -242,12 +211,12 @@ footer {
 }
 
 footer div {
-    padding: 1em;
+    padding: 0.5em;
 }
 
-a {
+footer a {
     padding: 1em;
-    color: var(--seagreen);
+    color: black;
     text-decoration: none;
 }
 
@@ -258,52 +227,54 @@ a {
 }
 
 button {
-    padding: 0.2em  0.4em;
+    padding: 0.2em;
     border-radius: 7px;
     border: 2px solid var(--dkGrey);
     background-color: var(--seagreen);
-    font-size: 1.2em;
 }
 
 button:hover {
-    border: 3px solid var(--seagreen);
-    box-shadow: 3px 3px 3px var(--light);
-    background-color: var(--navy);
-    color: var(--light);
-    text-decoration: none;
-}
-
-button a {
-    color: var(--navy);
-    text-decoration: none;
+    border: 3px solid var(--light);
+    box-shadow: 5px 5px 5px var(--seagreen);
+    background-color: var(--light);
 }
 
 button a:hover {
-    color: var(--light);
+    color: black;
     text-decoration: none;
 }
 
-.icons {
+#icons {
     border-bottom: 2px solid var(--seagreen);
     width: max-content;
     margin: 0 auto;
 }
 
+#icons a {
+    color: var(--seagreen);
+}
+
+#resume a {
+    color: black;
+}
+
 h3 {
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-weight: bold;
 }
 
 #contact {
-    font-size: 2.5em;
+    font-size: 1.5em;
     font-weight: bold;
 }
 
 .heart-text{
-    font-size: 17px;
+    font-size: 0.7em;
     color: var(--light);
 }
 
-.heart {
+#heart {
     color: var(--seagreen);
+    font-weight: bolder;
+    font-size: 1.5em;
 }

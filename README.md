@@ -50,15 +50,15 @@ For this project I used the following technologies
 
 ## Images
 
-![Image 1](assets/images/ccnSS1.png)
+![Image 1](assets/images/screenshots/ccnSS1.png)
 
-![Image 2](assets/images/ccnSS2.png)
+![Image 2](assets/images/screenshots/ccnSS2.png)
 
-![Image 3](assets/images/ccnSS3.png)
+![Image 3](assets/images/screenshots/ccnSS3.png)
 
-![Image 4](assets/images/ccnSS4.png)
+![Image 4](assets/images/screenshots/ccnSS4.png)
 
-![Image 5](assets/images/ccnSS5.png)
+![Image 5](assets/images/screenshots/ccnSS5.png)
 
 ## Contact
 
